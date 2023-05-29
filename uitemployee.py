@@ -20,7 +20,7 @@ def newst():
     F3 = Gender.get()
     F4 = experience.get()
     F5 = salary.get()
-    db = sql.connect(host="localhost", password="kriti@123#", user="root", database="managingsystem")
+    db = sql.connect(host="localhost", password="@123#", user="root", database="managingsystem")
     D = db.cursor()
     sql = "update employee set name='%s',number='%s',gender='%s',experience='%s',salary='%s' where id='%s'" % (F1, F2, F3, F4, F5, F)
     D.execute(sql)
