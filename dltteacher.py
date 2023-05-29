@@ -8,7 +8,7 @@ x=StringVar()
 def delete():
     import pymysql as sql
     z = x.get()
-    db = sql.connect(host="localhost", password="kriti@123#", user="root", database="managingsystem")
+    db = sql.connect(host="localhost", password="@123#", user="root", database="managingsystem")
     c = db.cursor()
     sql = "delete from te where id=('%s')"%(z)
     c.execute(sql)
