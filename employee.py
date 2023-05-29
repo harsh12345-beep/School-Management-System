@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import *
 import pymysql as sql
-db = sql.connect(host="localhost", database="managingsystem", user="root", password="kriti@123#")
+db = sql.connect(host="localhost", database="managingsystem", user="root", password="@123#")
 c = db.cursor()
 c.execute("select id,name,number,gender,experience,salary from employee")
 r=c.fetchall()
