@@ -18,7 +18,7 @@ def newst():
     F3 = Gender.get()
     F4 = experience.get()
     F5 = salary.get()
-    db = sql.connect(host="localhost",password="kriti@123#",user="root",database="managingsystem")
+    db = sql.connect(host="localhost",password="@123#",user="root",database="managingsystem")
     c = db.cursor()
     sql="insert into te value('%s','%s','%s','%s','%s','%s')"%(F, F1, F2, F3, F4,F5)
     c.fetchall;
