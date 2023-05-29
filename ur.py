@@ -18,7 +18,7 @@ def newst():
     F3 = Gender.get()
     F4 = experience.get()
     F5 = salary.get()
-    db = sql.connect(host="localhost",password="kriti@123#",user="root",database="managingsystem")
+    db = sql.connect(host="localhost",password="@123#",user="root",database="managingsystem")
     c = db.cursor()
     sql="update register set firstname='%s',lastname='%s',gendre='%s',class='%s',fathername='%s' where rollno='%s'"%(F1,F2,F3,F4,F5,F)
     c.fetchall;
