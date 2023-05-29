@@ -17,7 +17,7 @@ def newst():
     F2 = Gender.get()
     F3 = Class.get()
     F4 = Father.get()
-    db = sql.connect(host="localhost",password="kriti@123#",user="root",database="managingsystem")
+    db = sql.connect(host="localhost",password="@123#",user="root",database="managingsystem")
     c = db.cursor()
     sql="insert into register(Firstname,Lastname,Gendre,Class,Fathername) values('%s','%s','%s','%s','%s')"%(F, F1, F2, F3, F4)
     c.fetchall;
